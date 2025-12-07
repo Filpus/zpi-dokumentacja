@@ -1,0 +1,32 @@
+site_name: ZPI Dokumentacja
+site_description: Dokumentacja projektu ZPI
+site_author: Filpus
+repo_url: https://github.com/Filpus/zpi-dokumentacja
+repo_name: zpi-dokumentacja
+
+theme:
+  name: material
+  language: pl
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+    - scheme: slate
+      primary: blue
+      accent: blue
+
+plugins:
+  - search
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
+      puml_format: svg
+
+markdown_extensions:
+  - md_in_html
+  - admonition
+  - pymdownx.emoji
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Dokumentacja: dokumentacja.md
